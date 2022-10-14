@@ -633,6 +633,7 @@ details summary ~ * {
     function getSite(capitalize) {
         switch (window.location.pathname.split('/')[2]) {
             case 'rush': return capitalize ? 'Blook Rush' : 'rush';
+            case 'brawl': return capitalize ? 'Monster Brawl' : 'brawl';
             case 'gold': return capitalize ? 'Gold Quest' : 'gold';
             case 'fishing': return capitalize ? 'Fishing Frenzy' : 'fishing';
             case 'hack': return capitalize ? 'Crypto Hack' : 'crypto';
