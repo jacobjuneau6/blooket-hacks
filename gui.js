@@ -584,6 +584,8 @@ details summary ~ * {
                 } catch (e) { }
             };
         }
+	if (curPage == 'Brawl') {
+	    Array.from(document.getElementsByClassName('Godmode')).forEach(x => x.remove())
         if (curPage == 'crypto' && autoPassword) {
             let { stage, correctPassword } = Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.state;
             if (stage == "hack") Array.from(document.querySelectorAll('div')).filter(x => x.innerHTML == correctPassword)[0].click();
